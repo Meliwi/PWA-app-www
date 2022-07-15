@@ -1,4 +1,7 @@
 const FYLO_CACHE = "fylo_cache"
+/**
+ * These urls are from the files that we want to use whwn there is no internet conection
+ */
 const urls_to_cache = [
   "/",
   "index.html",
@@ -6,6 +9,10 @@ const urls_to_cache = [
   "/images/avatar-testimonial.jpg",
   "/images/bg-curve-desktop.svg",
   "/images/facebook.svg",
+  "/images/icon-32x32.PNG", 
+  "/images/icon-144x144.png", 
+  "/images/icon-360x360.png", 
+  "/images/icon-552x552.png",
   "/images/favicon-32x32.png",
   "/images/favicon-161x161.png",
   "/images/icon-arrow.svg",
@@ -21,9 +28,10 @@ const urls_to_cache = [
 ]
 
 /**
- * Event that install service worker
+ * With these event we save info in cache 
  */
 self.addEventListener('install', e=> {
+    //We register the urls into cache of device
     e.waitUntil(
         caches.open(FYLO_CACHE).then(cache => {
             //save info of urls in cache
@@ -33,9 +41,11 @@ self.addEventListener('install', e=> {
     )
 })
 /**
+ * Activates Service worker
  * once the service worker is installed, it wakes up and looks for resources to work offline
  */
 self.addEventListener('activate', e => {
+    //This is a copy of cache to compare if something change
     const cacheWhiteList = [FYLO_CACHE]
     e.waitUntil(
         caches.keys().then(cacheNames => {
@@ -46,12 +56,14 @@ self.addEventListener('activate', e => {
                 }
             })
         })
+        //This tells to sw that cache has ended to update
         .then(() => self.clients.claim())
     )
 })
 
 /**
- * when if there is internet connection recover the files
+ * If there is internet connection recovers the files of navigator
+ * and looks if something changed
  */
 self.addEventListener('fetch', e => {
     e.respondWith(
@@ -60,7 +72,7 @@ self.addEventListener('fetch', e => {
                 //recover info of cache 
                 return res
             }
-            //recover of fetch petition
+            //recover info of fetch petition
             return fetch(e.request)
         })
     )
