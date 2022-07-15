@@ -120,3 +120,12 @@
     width: 30rem;
   }
 }
+
+@media (max-width: 418px) {
+  .hero_input_button input {
+    width: 280px;
+  }
+  .hero_input_button button {
+    width: 300px;
+  }
+}
