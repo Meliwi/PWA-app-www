@@ -15,7 +15,9 @@
     <title>Fylo</title>
     <script>
         if("serviceWorker" in navigator){
-            navigator.serviceWorker.register("service-worker.js");
+            navigator.serviceWorker.register("./service-worker.js")
+            .then(reg => console.log("Registro exitoso"))
+            .catch(reg => console.log("Error"));
         }
     </script>
   </head>

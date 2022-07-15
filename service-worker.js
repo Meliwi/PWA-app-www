@@ -2,8 +2,22 @@ const FYLO_CACHE = "fylo_cache"
 const urls_to_cache = [
   "/",
   "index.html",
-  "/styles/index.css",
-  "/images/fast-fordward.png"
+  "/styles/index.css", 
+  "/images/avatar-testimonial.jpg",
+  "/images/bg-curve-desktop.svg",
+  "/images/facebook.svg",
+  "/images/favicon-32x32.png",
+  "/images/favicon-161x161.png",
+  "/images/icon-arrow.svg",
+  "/images/icon-email.svg",
+  "/images/icon-phone.svg",
+  "/images/icon-quotes.svg",
+  "/images/illustration-1.svg", 
+  "/images/illustration-2.svg",
+  "/images/instagram.svg", 
+  "/images/logo_footer.svg", 
+  "/images/logo.svg", 
+  "/images/twitter.svg"
 ]
 
 /**
