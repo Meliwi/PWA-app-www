@@ -3,7 +3,7 @@
     "short_name": "PWA app", 
     "theme_color": "white",
     "background-color": "white", 
-    "display": "fullscreen", 
+    "display": "standalone", 
     "scope": "./", 
     "start_url": "./", 
     "icons":[
