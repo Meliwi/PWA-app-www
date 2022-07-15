@@ -21,6 +21,16 @@
             "src": "./images/icon-552x552.png",
             "sizes": "552x552",
             "type": "image/png"
+        },
+        {
+            "src": "./images/icon-552x552.png",
+            "sizes": "620x620",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icon-552x552.png",
+            "sizes": "720x720",
+            "type": "image/png"
         }
     ] 
 }
