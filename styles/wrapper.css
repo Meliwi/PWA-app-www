@@ -1,0 +1,14 @@
+.wrapper {
+  /*Esta propiedad define el tamaño horizontal máximo o vertical de un 
+    elemento bloque*/
+  max-inline-size: 1158px;
+  padding: 20px;
+  margin: auto;
+}
+
+@media (min-width: 760px) {
+  .wrapper {
+    padding-inline-start: 2.8rem;
+    padding-inline-end: 2.8rem;
+  }
+}

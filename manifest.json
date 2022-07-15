@@ -1,0 +1,17 @@
+{
+    "name": "PWA app", 
+    "short_name": "PWA app", 
+    "theme_color": "white",
+    "background-color": "white", 
+    "display": "fullscreen", 
+    "scope": "./", 
+    "start_url": "./", 
+    "icons":[
+        {
+            "src": "/images/favicon-161x161.png", 
+            "type": "image/png", 
+            "sizes": "161x161"
+        }
+    ] 
+
+}

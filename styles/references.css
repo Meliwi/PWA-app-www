@@ -1,0 +1,147 @@
+.references {
+  padding-top: 70px;
+}
+
+.references_image_container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 45px 0px;
+}
+
+.references_curve_container {
+  display: flex;
+  justify-content: center;
+}
+
+.references_image_curve {
+  width: 100%;
+}
+
+.references_image_illustration {
+  width: 350px;
+}
+
+.references_info {
+  padding: 25px;
+}
+
+.references_info_background {
+  background: #f8f8fe;
+}
+
+.references_info_title {
+  color: #070439;
+  text-align: center;
+}
+
+.references_info_text {
+  color: #585989;
+}
+
+.references_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+  gap: 12px;
+  width: 184px;
+  margin: auto;
+  border-bottom: 2px solid transparent;
+}
+
+.references_link:hover {
+  border-bottom: 2px solid #3c9f8f;
+}
+
+.references_link_text {
+  text-decoration: none;
+  color: #3c9f8f;
+}
+
+.references_link_img {
+  width: 26px;
+  height: 26px;
+}
+
+.references_card {
+  background-color: #ffff;
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+
+.references_card:hover {
+  box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.4);
+}
+
+.references_card p {
+  color: #070439;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.references_card h1 {
+  margin: 0px;
+}
+
+.references_testimonial_container {
+  display: flex;
+  align-items: center;
+  /*distancia entre los elementoss*/
+  gap: 12px;
+}
+
+.references_testimonial_container img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.references_user {
+  display: inline-block;
+}
+.references_user h3 {
+  margin: 0;
+  font-size: 11px;
+}
+
+.references_user p {
+  margin: 0;
+  font-size: 8px;
+}
+
+@media (min-width: 760px) {
+  .references_info_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    transform: translate(0px, -50px);
+    gap: 2.5rem;
+  }
+  .references_image_container,
+  .references_info_container {
+    padding-inline-start: 2.8rem;
+    padding-inline-end: 2.8rem;
+    max-inline-size: 1158px;
+    margin: auto;
+  }
+  .references_image_illustration {
+    width: 22rem;
+  }
+  .references_info_title {
+    font-size: 1.8rem;
+  }
+  .references_curve_container {
+    transform: translate(0px, 55px);
+  }
+}
+@media (min-width: 860px) {
+  .references_info_container {
+    gap: 4.5rem;
+  }
+  .references_image_illustration {
+    width: 30rem;
+  }
+}

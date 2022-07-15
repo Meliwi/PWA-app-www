@@ -1,0 +1,38 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  gap: 12px;
+}
+.menu_container ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+.menu_container ul a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #070439;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+.menu_header_button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background-color: #3065f8;
+  border: 0;
+  padding: 4px 12px;
+  color: #ffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
