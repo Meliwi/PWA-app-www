@@ -4,13 +4,12 @@
     "theme_color": "white",
     "background-color": "white", 
     "display": "standalone", 
-    "scope": "./", 
-    "start_url": "./", 
+    "start_url": "index.html", 
     "icons":[
         {
-            "src": "/images/favicon-161x161.png", 
-            "type": "image/png", 
-            "sizes": "161x161"
+            "src": "/images/fast-fordward.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ] 
 
